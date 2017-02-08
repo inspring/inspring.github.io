@@ -15,11 +15,17 @@
           s.parentNode.insertBefore(vds, s);
         })();
       })();
+	  
+	  function pushevent(){
+		alert('click');
+		_vds.track("activity_signup", { activity: "ucs", time:"2017-02-08", user: "zhangsan" });
+		
+	  }
 </script>
 hello
 <br/>
 <input type="text" value="goods1"/><br/>
-<input type="button" id="btn1" value="add to cart"/><br/>
+<input type="button" id="btn1" value="add to cart" onclick="pushevent()"/><br/>
 <input type="text" value="goods2"/><br/>
 <input type="button" id="btn2" value="add to cart"/><br/>
 
